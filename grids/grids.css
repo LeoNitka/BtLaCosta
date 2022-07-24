@@ -1,0 +1,715 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@300&family=Lato:wght@100&family=Roboto:ital,wght@1,300&display=swap');
+*{
+    padding: 0;
+    margin:0
+}
+
+.grilla {
+    display: grid;
+    grid-template-areas:
+      "header"
+      "nav "
+      "productos"
+      "servicios"
+      "servicios2"
+      "parrafo"
+      "footer";
+   
+    grid-template-columns: 80% auto 5% ;
+    width: 100%;
+    height: 100vh;
+    
+ 
+ }
+.grillaOferta{
+display: grid;
+grid-template-areas: 
+"nav"
+"header"
+"productos"
+"servicios"
+"footer";
+
+width: 100%;
+height: 100vh;
+
+}
+.grillaDemanda{
+   display: grid;
+   grid-template-areas: 
+   "nav"
+   "header"
+   "productos"
+   "servicios"
+   "servicios2"
+   "footer"; 
+   width: 100%;
+   height: 100vh;
+   
+   }
+   .grillaContacto{
+      display: grid;
+      grid-template-areas: 
+      "nav"
+      "header"
+      "productos"
+      "servicios"
+      "footer"; 
+      width: 100%;
+      height: 100vh;
+      
+      }
+
+
+
+ .border {
+    border: 1px solid black;
+ }
+
+ header {
+    grid-area: header;
+    background-color: azure
+ }
+ footer {
+    grid-area: footer;
+    background-color: black;
+ }
+.productos {
+    grid-area: productos;  
+    background-color: azure
+ }
+ .servicios {
+    grid-area: servicios;  
+    background-color: azure
+
+ }
+
+.servicios2{
+   grid-area: servicios2;
+   background-color: azure
+   
+}
+
+ nav {
+    grid-area: nav;
+    background-color: black
+ }
+ 
+ .parrafo{
+   grid-area: parrafo;
+   background-color: azure
+
+ }
+ span a{
+   color: aliceblue;
+ }
+ 
+
+ 
+ ol, li{
+   display: grid;
+   
+ }
+ body{
+   background-color: white;
+   min-height: 100vh;
+ }
+
+ .menuFlex{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   text-decoration: none;
+   font-size: 20px;
+   
+ }
+ a{
+   text-decoration: none;
+ }
+
+
+header{
+   display: grid;
+   justify-content: center;
+   font-family: 'Arima', cursive;
+
+}
+ul li a {
+   color: aliceblue;
+}
+
+.imgPrincipal{
+
+   display: flex;
+   margin: 10px ;
+   width: 100px;
+   height: 70px;
+   border-radius: 1cm;
+   border: 3px solid rgb(9, 46, 120);
+}
+
+.chicanot{
+   
+   width: 100px;
+   height: 70px;
+   margin-top: 10px;
+   margin-left: 10px;
+   border-radius: 1cm;
+   border: 3px solid black;
+   margin-bottom: 10px;
+     }
+
+     .servicios2{
+
+      padding: 30px;
+     }
+
+     .login{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+  }
+  .parrafo{
+   padding: 30px;
+  }
+
+
+  footer{
+   padding: 10px;
+   margin-bottom: 0px;
+   margin-top: 200px;
+   background-color: black;
+  
+}
+ 
+
+
+.boton{
+
+   width: 120px;
+   height: 50px;
+   background-color: rgb(126, 190, 246);
+   color: black;
+  
+
+}
+
+h1{
+   
+   position: relative;
+   font-style: italic;
+   font-family: 'Arima', cursive;
+   text-align: center;
+   font-weight: bolder;
+   color: black;
+    }
+
+a{
+color: black
+}
+li, p{
+   font-size: 20px;
+}
+
+.iconos{
+   width: 40px;
+   height: 40px;
+}
+.redes{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+  
+     
+  }
+   
+   
+
+   .publicaciones{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      display: flex;
+      margin: 10px ;
+      width: 130px;
+      height: 100px;
+      padding: 5px;
+  }
+
+  .ofertaP{
+   font-size: 10px;
+   font-weight: lighter;
+   color: black;
+   padding: 10px;
+   margin-right: 20px;
+   margin-top: 20px;
+   margin-left: 10px;
+   margin-bottom: 20px;
+   border: 1px outset black
+}
+
+.ofertaImg{
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   justify-content: center;
+   width: 130px;
+   height: 100px;
+   padding: 10px;
+   background-color: rgb(133, 161, 237);
+
+}
+
+.demandaImg{
+   display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      display: flex;
+      margin: 10px ;
+      width: 130px;
+      height: 100px;
+      padding: 5px;
+}
+.demandaP{
+   font-size: 10px;
+   font-weight: lighter;
+   color: black;
+   padding: 10px;
+   margin-right: 150px;
+   margin-top: 10px;
+   margin-left: 50px;
+   margin-bottom: 10px;
+   border: 1px outset black
+     }
+
+@media (min-width:500px){
+   .grilla{
+       
+       display: grid;
+       grid-template-areas:
+       "header header"
+       "nav nav"
+       "servicios servicios"
+       "servicios2 servicios2"
+       "parrafo parrafo"
+       "footer footer";
+   }
+    .chicanot{
+      margin:10px 0px 10px 10px;
+      width: 180px;
+      height: 120px;
+      border-radius: 1cm;
+      border: 3px solid black;
+     
+        };
+        .menuFlex{
+         display: flex;
+         flex-direction: row;
+         justify-content: space-around;
+         text-decoration: none;
+         font-size: 20px;
+         
+       }
+   .imgPrincipal{
+
+      margin: 15px 0px 10px 160px ;
+      width: 200px;
+      height: 150px;
+      border-radius: 1cm;
+      border: 3px solid rgb(9, 46, 120);
+   };
+   body{
+      background-color: white;
+   }
+   nav span{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+  
+  }
+   
+   
+}
+   footer{
+       margin-top: 0px;
+   };
+
+
+@media (min-width:768px){
+   .grilla{
+       display: grid;
+       margin-bottom: 10px;
+       grid-template-columns: 1fr 3fr 1fr;
+       grid-template-areas: 
+       "header header "
+       "nav nav nav"
+       "contenido contenido contenido"
+       "contenido2 contenido2 contenido2 "
+       "parrafo parrafo parrafo"
+       "footer footer footer";
+   }
+   .chicanot{
+      width: 350px;
+      height: 250px;
+      margin-top: 10px;
+      margin-left: 10px;
+      border-radius: 1cm;
+      border: 3px solid black;
+      margin-bottom: 10px;
+        }
+        
+   .imgPrincipal{
+      margin: 15px 0px 10px 300px ;
+      width: 350px;
+      height: 250px;
+      border-radius: 1cm;
+      border: 3px solid rgb(9, 46, 120);
+   };
+   
+
+   footer{
+       margin-top: 0;
+       
+       
+   }
+}
+
+@media(min-width:1024px){
+ 
+   .grilla {
+
+      display: grid;
+      grid-template-areas:
+        "nav header "
+        "nav productos productos"
+        "nav servicios servicios"
+        "nav servicios2 servicios2"
+        "nav parrafo parrafo"
+        "nav footer footer";
+      grid-template-rows: 1fr 1fr 1fr 1fr;   
+      grid-template-columns: 80% auto 10% ;
+      width: 100%;
+      height: 100vh;
+      gap: 1px;
+   }
+   .chicanot{
+   
+      width: 350px;
+      height: 200px;
+      margin-top: 10px;
+      margin-left: 10px;
+      border-radius: 1cm;
+      border: 3px solid black;
+      margin-bottom: 10px;
+        }
+   .imgPrincipal{
+
+      margin: 15px 0px 10px 250px ;
+      width: 350px;
+      height: 250px;
+      border-radius: 1cm;
+      border: 3px solid rgb(9, 46, 120);
+   };
+
+header{
+    background-color: black;
+    padding: 10px;
+    margin: 15px;
+
+}
+.nav{
+   display: inline-block;
+   flex-direction: row;
+   justify-content: space-around;
+   text-decoration: none;
+   font-size: 20px;
+   
+ }
+ .menuFlex{
+   display: inline-block;
+   flex-direction: row;
+   justify-content: space-around;
+   text-decoration: none;
+   font-size: 20px;
+   
+ }
+
+ .titulo{
+   border-radius: 1cm;
+   top:2px;
+   font-size: 45px;
+   border: 2px outset black;
+   padding: 10px;
+   margin: 10px 40px 25px 40px
+
+ }
+
+   
+}
+
+@media (min-width:500px){
+   .grillaOferta{
+       
+       display: grid;
+       grid-template-areas:
+       "nav nav"
+       "header header"
+       "servicios"
+       "servicios2 servicios2"
+       "parrafo parrafo"
+       "footer footer";
+   }
+   .publicaciones{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      display: flex;
+      margin: 10px ;
+      width: 200px;
+      height: 120px;
+      padding: 5px;
+  }
+
+ }
+
+ @media (min-width:768px){
+   .grillaOferta{
+       display: grid;
+       margin-bottom: 10px;
+       grid-template-columns: 1fr 3fr 1fr;
+       grid-template-areas: 
+       "nav nav nav"
+       "header header header"
+       "servicios servicios "
+       "servicios2 servicios2 servicios2"
+       "parrafo parrafo parrafo"
+       "footer footer footer";
+   }
+   .publicaciones{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      display: flex;
+      margin: 10px ;
+      width: 350px;
+      height: 250px;
+      padding: 5px;
+  }
+  .ofertaP{
+   font-size: 15px;
+   font-weight: lighter;
+   color: black;
+   padding: 10px;
+   margin-right: 20px;
+   margin-top: 20px;
+   margin-left: 10px;
+   margin-bottom: 20px;
+   border: 1px outset black
+}
+
+    }
+    @media(min-width:1024px){
+ 
+      .grillaOferta {
+         display: grid;
+         grid-template-areas:
+         "nav nav nav"
+         "header header header"
+         "servicios servicios "
+         "servicios2 servicios2 servicios2"
+         "parrafo parrafo parrafo"
+         "footer footer footer";
+         grid-template-rows: 1fr 1fr 1fr 1fr;   
+         grid-template-columns: 80% auto 10% ;
+         width: 100%;
+         height: 100vh;
+         gap: 1px;
+      }
+
+      .publicaciones{
+         display: flex;
+         flex-direction: column;
+         flex-wrap: wrap;
+         justify-content: center;
+         display: flex;
+         margin: 10px ;
+         width: 400px;
+         height: 250px;
+         padding: 5px;
+     }
+       }
+       @media (min-width:500px){
+         .grillaDemanda{
+             
+             display: grid;
+             grid-template-areas:
+             "nav nav"
+             "header header"
+             "servicios"
+             "servicios2 servicios2"
+             "footer footer";
+         }
+         .publicaciones{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            display: flex;
+            margin: 10px ;
+            width: 200px;
+            height: 120px;
+            padding: 5px;
+        }
+        .demandaImg{
+         width: 350px;
+         height: 300px;
+        }
+        
+      
+        
+       }
+
+       @media (min-width:768px){
+         .grillaDemanda{
+             display: grid;
+             margin-bottom: 10px;
+             grid-template-columns: 1fr 3fr 1fr;
+             grid-template-areas: 
+             "nav nav nav"
+             "header header header"
+             "servicios servicios servicios"
+             "servicios2 servicios2 "
+             "parrafo parrafo parrafo"
+             "footer footer footer";
+             
+         }
+         .publicaciones{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            display: flex;
+            margin: 10px ;
+            width: 350px;
+            height: 250px;
+            padding: 5px;
+  }
+  .demandaP{
+   font-size: 15px;
+   font-weight: lighter;
+   color: black;
+   padding: 10px;
+   margin-right: 150px;
+   margin-top: 10px;
+   margin-left: 50px;
+   margin-bottom: 10px;
+   border: 1px outset black
+     }
+     .demandaImg{
+      width: 300px;
+      height: 300px;
+     }
+   }
+
+   @media (min-width:1024px){
+      .grillaDemanda{
+          display: grid;
+          margin-bottom: 10px;
+          grid-template-columns: 1fr 3fr 1fr;
+          grid-template-areas: 
+          "nav nav nav"
+          "header header header"
+          "servicios servicios servicios"
+          "servicios2 servicios2 servicios2"
+          "parrafo parrafo parrafo"
+          "footer footer footer";
+      }
+      .publicaciones{
+         display: flex;
+         flex-direction: column;
+         flex-wrap: wrap;
+         justify-content: center;
+         display: flex;
+         margin: 10px ;
+         width: 400px;
+         height: 250px;
+         padding: 5px;
+}
+.demandaP{
+font-size: 20px;
+font-weight: lighter;
+color: black;
+padding: 10px;
+margin-right: 150px;
+margin-top: 10px;
+margin-left: 50px;
+margin-bottom: 10px;
+border: 1px outset black
+  }
+  .demandaImg{
+   width: 400px;
+   height: 300px;
+  }
+  }
+
+  
+@media (min-width:500px){
+   .grillaContacto{
+       
+       display: grid;
+       grid-template-areas:
+       "nav nav"
+       "header header"
+       "servicios"
+       "servicios2 servicios2"
+       "footer footer";
+   }
+   .imgContacto{
+      width: 300px;
+      height: 250px;
+   }
+   }
+     
+@media (min-width:768px){
+   .grillaContacto{
+       
+       display: grid;
+       grid-template-areas:
+       "nav nav nav"
+       "header header header"
+       "servicios servicios"
+       "servicios2 servicios2"
+       "footer footer";
+   }
+   
+   }
+
+   @media (min-width:1024px){
+      .grillaContacto{
+          
+          display: grid;
+          grid-template-areas:
+          "nav nav nav"
+          "header header header"
+          "servicios servicios"
+          "servicios2 servicios2"
+          "footer footer";
+      }
+      .imgContacto{
+         display: flex;
+         flex-direction: column;
+         flex-wrap: wrap;
+         justify-content: center;
+         width: 300px;
+         height: 250px;
+         
+         
+         
+          
+      }
+      
+      }
