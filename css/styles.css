@@ -14,7 +14,7 @@ body{
 }
 header{
     background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 16%, rgba(5,102,183,1) 55%, rgba(35,135,156,1) 100%);
+background: linear-gradient(90deg, rgba(2,0,36,1) 11%, rgba(5,102,183,1) 55%, rgba(35,135,156,1) 100%);
     padding: 10px;
     margin: 15px;
 
@@ -28,7 +28,7 @@ a{
     margin: 20px;
 }
 
-ul li:hover{
+ul li:hover{ 
     display: inline-block;
     transform: scale(2);
 }
@@ -247,4 +247,5 @@ justify-content: center;
 
 .imgGaleria:hover{
     transform: scale(1.4)
+    
 }
