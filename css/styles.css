@@ -101,7 +101,7 @@ h4{
 .imgPrincipal{
 
    display: flex;
-   margin: 20px 150px 0px 300px;
+   margin: 20px 150px 0px 230px;
    padding: 30px;
    width: 450px;
    height: 350px;
@@ -271,5 +271,9 @@ justify-content: center;
     font-size: 3em;
 }
 
+.carouselImg{
+    width: 1000px;
+    height: 700px;
+}
 
 
