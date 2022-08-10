@@ -293,7 +293,7 @@ color:aquamarine
 }
 .main{
     display: grid;
-    background-color:black;
+    background-color: rgb(255, 255, 255);
     margin-bottom: 1fr;
     gap:10px;
     grid-template-areas: 
