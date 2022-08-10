@@ -13,7 +13,7 @@ body{
     
 }
 header{
-background: rgb(2,0,36);
+background: rgb(255, 255, 255);
 background: linear-gradient(90deg, rgba(2,0,36,1) 11%, rgba(5,102,183,1) 55%, rgba(35,135,156,1) 100%);
 padding: 10px;
 margin: 15px;
@@ -181,7 +181,7 @@ justify-content: center;
 
 }
 
-.boton{ 
+.boton:hover{ 
     width: 125px;
     height: 70px;
     background-color: rgb(126, 190, 246);
@@ -189,10 +189,13 @@ justify-content: center;
 
 }
 
+
 .login{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+
+   
 }
 
 .publicaciones{
@@ -276,4 +279,119 @@ justify-content: center;
     height: 700px;
 }
 
+a:link{
+    color: blueviolet;
+}
 
+a:visited{
+    color: blue;
+}
+
+a:active{
+color:aquamarine
+
+}
+.main{
+    display: grid;
+    background-color:black;
+    margin-bottom: 1fr;
+    gap:10px;
+    grid-template-areas: 
+    "nav"
+    "header"
+    "galeria"
+    "footer";
+}
+
+header{
+    grid-area: header;
+    background-color: azure
+}
+
+nav{
+    grid-area: nav;
+    background-color: black;
+}
+.galeria{
+    grid-area: galeria;
+    background-color: rgba(94, 151, 249, 0.991);
+}
+footer{
+    grid-area: footer;
+    background-color: black
+     }
+
+     .red{
+        width: 40px;
+        height: 40px;
+        background-color: black;
+        color: black;
+        margin: 0px;
+        padding: 0px;
+    }
+
+
+     @media (min-width:500px){
+        .main{
+            margin: 0;
+            grid-template-areas: 
+            "nav nav"
+            "header header"
+            "galeria galeria"
+            "footer footer";
+        }
+        img{
+            width: 350px;
+            height: 300px;
+        }
+    
+      }
+    
+      @media (min-width:768px){
+        .main{
+           
+            margin-bottom: 1.5em;
+            grid-template-columns: 1fr 4fr 1fr;
+            grid-template-areas: 
+            "nav nav nav"
+            "header header header"
+            "galeria galeria galeria"
+            "footer footer footer";
+        }
+        
+    
+        .galeria{
+            background-color: rgba(94, 151, 249, 0.991);
+    
+        }
+    
+       
+        img{
+            
+            width: 200px;
+            height: 150px;
+        }
+    
+          }
+    
+          @media(min-width:1024px){
+         
+            .main{
+           
+                margin-bottom: 1.5em;
+                grid-template-columns: 1fr  1fr;
+                grid-template-areas: 
+                "nav nav nav"
+                "header header header"
+                "galeria galeria galeria"
+                "footer footer footer";
+            }
+            img{
+        
+                width: 500px;
+                height: 400px;
+            }
+
+         }    
+
+        
