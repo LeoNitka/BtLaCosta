@@ -322,14 +322,47 @@ footer{
      }
 
      .red{
-        width: 39px;
-        height: 39px;
+        width: 40px;
+        height: 40px;
         background-color: black;
         color: black;
         margin: 0px;
         padding: 0px;
     }
 
+    $botones: ( 
+        login:#1212f5cc,
+        crear: #030355,
+    );
+    @each $boton, $color in $botones{
+        .btn--#{$boton}{
+            background-color: $color;
+        }
+        
+    }
+
+    .parra{
+color: blue;
+font-family: Arial, Helvetica, sans-serif;
+    }
+    .parra--1{
+        @extend .parra;
+    }
+    .parra--2{
+        @extend .parra;
+    }
+    .parra--3{
+        @extend .parra;
+    }
+
+    @mixin flex-row-center{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+    }
+    .redes{
+        @include flex-row-center;
+    }
 
      @media (min-width:500px){
         .main{
@@ -359,6 +392,7 @@ footer{
             "footer footer footer";
         }
         
+
     
         .galeria{
             background-color: rgba(94, 151, 249, 0.991);
