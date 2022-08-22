@@ -13,8 +13,8 @@ body {
 header {
   background: rgb(255, 255, 255);
   background: linear-gradient(90deg, rgb(2, 0, 36) 11%, rgb(5, 102, 183) 55%, rgb(35, 135, 156) 100%);
-  padding: 10px;
-  margin: 15px;
+  padding: 5px;
+  margin: 0px;
   width: 100%;
 }
 
@@ -24,6 +24,7 @@ a {
   color: whitesmoke;
   padding: 0px;
   margin: 20px;
+  font-size: 30px;
 }
 
 ul li:hover {
@@ -63,6 +64,8 @@ h2 {
   color: black;
   font-size: 25px;
   font-style: normal;
+  padding: 10px;
+  text-align: center;
 }
 
 li {
@@ -71,6 +74,8 @@ li {
   text-align: justify;
   line-height: 1.6;
   color: black;
+  text-align: center;
+  list-style: none;
 }
 
 h3 {
@@ -91,18 +96,20 @@ h4 {
 
 .imgPrincipal {
   display: flex;
-  margin: 20px 150px 0px 230px;
   padding: 30px;
   width: 450px;
   height: 350px;
   border-radius: 1cm;
+  margin: 80px auto;
+  justify-content: center;
 }
 
 .chicanot {
-  margin-top: 15px;
-  margin-left: 20px;
+  display: flex;
   border-radius: 1cm;
   border: 3px solid black;
+  margin: 50px auto;
+  justify-content: center;
 }
 
 p {
@@ -136,11 +143,6 @@ footer {
   justify-content: flex-start;
   background-color: azure;
   padding: 30px;
-}
-
-div {
-  padding: 20px;
-  margin: 10px;
 }
 
 .imgGaleria {
@@ -257,8 +259,10 @@ div {
 }
 
 .carouselImg {
-  width: 1000px;
-  height: 700px;
+  width: 640px;
+  height: 480px;
+  justify-content: center;
+  margin: 50px;
 }
 
 a:link {
@@ -271,6 +275,16 @@ a:visited {
 
 a:active {
   color: aquamarine;
+}
+
+.registrese {
+  margin: 40px;
+  text-align: center;
+}
+
+.ofrecemos {
+  margin: 150px;
+  text-align: center;
 }
 
 .main {
@@ -362,7 +376,7 @@ footer {
     grid-template-areas: "nav nav nav" "header header header" "galeria galeria galeria" "footer footer footer";
   }
   img {
-    width: 500px;
-    height: 400px;
+    width: 400px;
+    height: 350px;
   }
 }

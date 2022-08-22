@@ -15,9 +15,12 @@ body{
 header{
 background: rgb(255, 255, 255);
 background: linear-gradient(90deg, rgba(2,0,36,1) 11%, rgba(5,102,183,1) 55%, rgba(35,135,156,1) 100%);
-padding: 10px;
-margin: 15px;
+padding: 5px;
+margin: 0px;
 width: 100%;
+
+
+
 
 }
 
@@ -27,6 +30,7 @@ a{
     color: whitesmoke;
     padding: 0px;
     margin: 20px;
+    font-size: 30px;
 }
 
 ul li:hover{ 
@@ -71,6 +75,8 @@ h2{
     color: black;
     font-size: 25px;
     font-style: normal;
+    padding: 10px;
+    text-align: center;
 }
 
 li{
@@ -78,7 +84,11 @@ li{
     font-weight: 500;
     text-align: justify;
     line-height: 1.6;
-    color:black
+    color:black;
+    text-align: center;
+    list-style: none;
+  
+    
     
   
     
@@ -101,19 +111,25 @@ h4{
 .imgPrincipal{
 
    display: flex;
-   margin: 20px 150px 0px 230px;
    padding: 30px;
    width: 450px;
    height: 350px;
    border-radius: 1cm;
+   margin:80px auto;
+   justify-content: center;
+   
   
   
 }
 .chicanot{
-    margin-top: 15px;
-    margin-left: 20px;
+    display: flex;
     border-radius: 1cm;
     border: 3px solid black;
+    margin:50px auto;
+   justify-content: center;
+   
+    
+
 }
     
 p{
@@ -152,11 +168,7 @@ footer{
     padding: 30px;
     
 }
-div{
-    
-    padding: 20px;
-    margin: 10px;
-}
+
 
 .imgGaleria{
     
@@ -276,8 +288,11 @@ justify-content: center;
 }
 
 .carouselImg{
-    width: 1000px;
-    height: 700px;
+    width: 640px;
+    height: 480px;
+    justify-content: center;
+    
+    margin:50px
 }
 
 a:link{
@@ -292,6 +307,16 @@ a:active{
 color:aquamarine
 
 }
+.registrese{
+    margin:40px;
+    text-align: center;
+}
+
+.ofrecemos{
+    margin: 150px;
+    text-align: center;
+}
+
 .main{
     display: grid;
     background-color: rgb(255, 255, 255);
@@ -424,8 +449,8 @@ font-family: Arial, Helvetica, sans-serif;
             }
             img{
         
-                width: 500px;
-                height: 400px;
+                width: 400px;
+                height: 350px;
             }
 
          }    

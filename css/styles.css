@@ -15,9 +15,10 @@ body{
 header{
 background: rgb(255, 255, 255);
 background: linear-gradient(90deg, rgba(2,0,36,1) 11%, rgba(5,102,183,1) 55%, rgba(35,135,156,1) 100%);
-padding: 10px;
+padding: 5px;
 margin: 15px;
 width: 100%;
+margin: 0px;
 
 }
 
@@ -27,6 +28,7 @@ a{
     color: whitesmoke;
     padding: 0px;
     margin: 20px;
+    font-size: 30px;
 }
 
 ul li:hover{ 
@@ -152,11 +154,13 @@ footer{
     padding: 30px;
     
 }
-div{
-    
+.divImg{
     padding: 20px;
     margin: 10px;
 }
+    
+
+
 
 .imgGaleria{
     
