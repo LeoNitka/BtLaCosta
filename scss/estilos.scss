@@ -181,12 +181,13 @@ justify-content: center;
 
 }
 
-.boton:hover{ 
-    width: 125px;
-    height: 70px;
-    background-color: rgb(126, 190, 246);
-    color: black;
-
+.btn--login:hover{ 
+    width: 120px;
+    height: 50px;
+}
+.btn--crear:hover{
+    width: 120px;
+    height: 50px;
 }
 
 
@@ -331,12 +332,13 @@ footer{
     }
 
     $botones: ( 
-        login:#1212f5cc,
-        crear: #030355,
+        login:#006ba8cc, 
+        crear: #001f74, 
     );
     @each $boton, $color in $botones{
         .btn--#{$boton}{
             background-color: $color;
+            color: white;
         }
         
     }

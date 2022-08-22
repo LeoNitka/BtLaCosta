@@ -163,11 +163,14 @@ div {
   justify-content: center;
 }
 
-.boton:hover {
-  width: 125px;
-  height: 70px;
-  background-color: rgb(126, 190, 246);
-  color: black;
+.btn--login:hover {
+  width: 120px;
+  height: 50px;
+}
+
+.btn--crear:hover {
+  width: 120px;
+  height: 50px;
 }
 
 .login {
@@ -308,11 +311,13 @@ footer {
 }
 
 .btn--login {
-  background-color: rgba(18, 18, 245, 0.8);
+  background-color: rgba(0, 107, 168, 0.8);
+  color: white;
 }
 
 .btn--crear {
-  background-color: #030355;
+  background-color: #001f74;
+  color: white;
 }
 
 .parra, .parra--3, .parra--2, .parra--1 {
