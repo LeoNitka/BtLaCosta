@@ -400,7 +400,7 @@ font-family: Arial, Helvetica, sans-serif;
             "galeria galeria"
             "footer footer";
         }
-        img{
+        .imgGaleria{
             width: 350px;
             height: 300px;
         }
@@ -426,8 +426,7 @@ font-family: Arial, Helvetica, sans-serif;
     
         }
     
-       
-        img{
+       .imgGaleria{
             
             width: 200px;
             height: 150px;
@@ -447,7 +446,7 @@ font-family: Arial, Helvetica, sans-serif;
                 "galeria galeria galeria"
                 "footer footer footer";
             }
-            img{
+            .imgGaleria{
         
                 width: 400px;
                 height: 350px;
@@ -455,4 +454,140 @@ font-family: Arial, Helvetica, sans-serif;
 
          }    
 
+         @media (max-width:500px){
+            .imgPrincipal{
+
+                display: flex;
+                padding: 30px;
+                width: 300px;
+                height: 200px;
+                border-radius: 1cm;
+                margin:80px auto;
+                justify-content: center;
+             }
+
+             }
+             .chicanot{
+                width: 300px;
+                height: 200px;
+                display: flex;
+                border-radius: 1cm;
+                border: 3px solid black;
+                margin:50px auto;
+               justify-content: center;
+            
+            }
+
+           .h3Busco{
+            padding: 50px;
+            font-size: 15px;
+           }
+
+           h2{
+            font-size: 20px;
+            padding: 50px;
+           }
+
+           span{
+            font-size: 20px;
+           }
+
+           .bienvenido{
+            color: #001f74;
+           }
+            
+
+            .carouselImg{
+                width: 250px;
+                height: 150px;
+    
+               
+            }
+
+            .h3Ofrecemos{
+                padding: 50px;
+                font-size: 15px;
+            
+            }
+
+            .ofertaP{
+                font-size: 15px;
+                font-weight: lighter;
+                color: black;
+                padding: 10px;
+                margin-right: 150px;
+                margin-top: 20px;
+                margin-left: 10px;
+                margin-bottom: 20px;
+                border: 1px outset black
+            }
+
+            .ofertaImg{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                justify-content: center;
+                width: 250px;
+                height: 150px;
+                padding: 10px;
+                background-color: rgb(133, 161, 237);
+            
+            }
+
+            @media (max-width:768px){
+
+                .imgPrincipal{
+
+                    display: flex;
+                    padding: 30px;
+                    width: 350px;
+                    height: 250px;
+                    border-radius: 1cm;
+                    margin:80px auto;
+                    justify-content: center;
+                 }
+    
+                 }
+                 .chicanot{
+                    width: 350px;
+                    height: 250px;
+                    display: flex;
+                    border-radius: 1cm;
+                    border: 3px solid black;
+                    margin:50px auto;
+                   justify-content: center;
+                
+                }
+
+                .carouselImg{
+                    width: 450px;
+                    height: 300px;
+                    justify-content: center;
+                    margin:50px
+                }
+
+                h2{
+                    font-size: 25px;
+                    padding: 50px;
+                    border: 1px solid black;
+                   }
+        
+                   span{
+                    font-size: 25px;
+                   }
+
+                   .h3Busco{
+                    padding: 50px;
+                    font-size: 20px;
+                   }
+
+                   @media(max-width:1024px){
+
+
+                      }
+                    
+
+
+                  
+            
         
