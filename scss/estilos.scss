@@ -3,34 +3,50 @@
     padding: 0%;
     margin: 0%;
     font-size: 15px;
-    
 }
 
 body{
     min-height: 100vh;
     background-color: rgb(255, 255, 255);
-    
-    
 }
+
 header{
-background: rgb(255, 255, 255);
-background: linear-gradient(90deg, rgba(2,0,36,1) 11%, rgba(5,102,183,1) 55%, rgba(35,135,156,1) 100%);
-padding: 5px;
-margin: 0px;
-width: 100%;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 11%, rgba(5,102,183,1) 55%, rgba(35,135,156,1) 100%);
+    padding: 5px;
+    margin: 0;
+    width: 100%;
+}
 
-
-
-
+header{
+    grid-area: header;
+    background-color: azure
 }
 
 a{
     text-decoration: none;
     display: inline-block;
-    color: whitesmoke;
     padding: 0px;
     margin: 20px;
     font-size: 30px;
+}
+
+.navbar-light .navbar-nav .nav-link.active:hover {
+    color: #001f74;
+    text-shadow: 3px 3px 3px #322185;
+}
+
+ol {
+    padding: 3px;
+}
+
+li{
+    font-size: 18px;
+    font-weight: 500;
+    text-align: justify;
+    line-height: 1.6;
+    color:black;
+    text-align: center;
+    list-style: none;
 }
 
 ul li:hover{ 
@@ -39,14 +55,18 @@ ul li:hover{
     color: whitesmoke;
 }
 
+nav{
+    grid-area: nav;
+    background-color: black;
+}
+
 nav ul{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     list-style: none;
-    
-
 }
+
 h1{
     position: relative;
     font-style: italic;
@@ -54,18 +74,6 @@ h1{
     text-align: center;
     font-weight: bolder;
     color: black;
-   
-}
-.titulo {
-    
-    border-radius: 1cm;
-    top:2px;
-    font-size: 45px;
-    border: 2px outset black;
-    padding: 10px;
-    margin: 10px 40px 25px 40px
-   
-    
 }
 
 h2{
@@ -79,56 +87,21 @@ h2{
     text-align: center;
 }
 
-li{
-    font-size: 18px;
-    font-weight: 500;
-    text-align: justify;
-    line-height: 1.6;
-    color:black;
-    text-align: center;
-    list-style: none;
-  
-    
-    
-  
-    
-}
 h3{
     font-family: 'Roboto', sans-serif;
     color: black;
     font-size: 20px;
     font-style: normal;
-    font-weight: bolder;   
+    font-weight: bolder;
+    margin-bottom: 50px;   
 }
+
 h4{
     font-family: Arial, Helvetica, sans-serif;
     color: black;
     font-size: 15px;
     font-style: normal;
     font-weight: lighter;
-
-}
-.imgPrincipal{
-
-   display: flex;
-   padding: 30px;
-   width: 450px;
-   height: 350px;
-   border-radius: 1cm;
-   margin:80px auto;
-   justify-content: center;
-   
-  
-  
-}
-.chicanot{
-    display: flex;
-    border-radius: 1cm;
-    border: 3px solid black;
-    margin:50px auto;
-   justify-content: center;
-   
-    
 
 }
     
@@ -144,6 +117,7 @@ p{
     border: 1px outset black
     
 }
+
 span{
     color: red;
     font-size: 25px;
@@ -152,75 +126,200 @@ span{
 
 footer{
     padding: 10px;
-    margin-bottom: 0px;
-    margin-top: 200px;
+    margin-top: 100px;
     background-color: black;
-   
+}
+
+footer{
+    grid-area: footer;
+    background-color: black;
+}
+
+main h1 {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 3em;
+}
+
+
+.carousel-container{
+    margin-top: 45px;
+    background: #001f74;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    color: aqua;
+    background-color: #001f74;
+}
+
+.carouselImg{
+    display: flex;
+    width: 640px;
+    height: 480px;
+    margin: auto;
+}
+
+.start {
+    text-align: center;
+}
+
+.imgPrincipal{
+    display: flex;
+    padding: 30px;
+    width: 450px;
+    height: 350px;
+    border-radius: 1cm;
+    margin: 50px auto;
+    justify-content: center;
+}
+
+.chicanot{
+    display: flex;
+    border-radius: 1cm;
+    border: 3px solid black;
+    margin: auto;
+    justify-content: center;
+}
+
+.container-img-list{
+    background: #001f74;
+    padding: 30px 0 20px;
+    margin-bottom: 50px;
+}
+
+.container-img-list li{
+    margin-top: 30px;
+    color: #f1f1f1;
+    text-align: center;
+    list-style:inside;
+}
+
+.info h3{
+  text-align: justify;
+  margin: 50px 100px;
+}
+
+.registrese{
+    margin:40px;
+    text-align: center;
+}
+
+.login{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+$botones: (
+        login:#006ba8cc,
+        crear: #001f74,
+);
+     
+@each $boton, $color in $botones{
+        
+        .btn--#{$boton}{
+            background-color: $color;
+            color: white;
+        }
+        
+}
+
+.btn--login:hover{
+    width: 100px;
+    background: #006aa86e;
+}
+
+.btn--crear:hover{
+    width: 150px;
+    background: #001f74a9;
+}
+
+.redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.red{
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    color: black;
+    margin: 0px;
+    padding: 0px;
+}
+
+.parra{
+        color: blue;
+        font-family: Arial, Helvetica, sans-serif;
+}
+.parra--1{
+        @extend .parra;
+}
+.parra--2{
+        @extend .parra;
+}
+.parra--3{
+        @extend .parra;
+}
+
+
+@mixin flex-row-center{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.redes{
+    @include flex-row-center;
+}
+
+
+// SECCIÓN GALERIA:
+.main{
+    display: grid;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 1fr;
+    gap:10px;
+    grid-template-areas: 
+    "nav"
+    "header"
+    "galeria"
+    "footer";
+}
+
+.galeria{
+    grid-area: galeria;
+    background-color: rgba(94, 151, 249, 0.991);
 }
 
 .flex-container{
-
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
     background-color: azure;
     padding: 30px;
-    
 }
 
+.divImg{
+    padding: 20px;
+    margin: 10px;
+}
 
 .imgGaleria{
-    
     width: 290px;
     height: 190px;
     background-color: azure;
     position: relative;
-
 }
 
-.contacto{
-    width: 350px;
-    height: 180px;
-    padding: 20px;
-    margin: 10px
+.imgGaleria:hover{
+    transform: scale(1.3)
 }
+// CIERRE SECCIÓN GALERIA
 
-.redes{
-display: flex;
-flex-direction: row;
-justify-content: center;
-
-}
-
-.btn--login:hover{ 
-    width: 120px;
-    height: 50px;
-}
-.btn--crear:hover{
-    width: 120px;
-    height: 50px;
-}
-
-
-.login{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-
-   
-}
-
-.publicaciones{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 350px;
-    height: 150px;
-    padding: 10px;
-}
-
+// SECCIÓN DEMANDA
 .demandaImg{
     display: flex;
     flex-direction: column;
@@ -241,6 +340,19 @@ justify-content: center;
     margin-bottom: 10px;
     border: 1px outset black
 }
+// CIERRE SECCIÓN DEMANDA
+
+// SECCIÓN OFERTA
+.publicaciones{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 350px;
+    height: 150px;
+    padding: 10px;
+}
+
 .ofertaImg{
     display: flex;
     flex-direction: column;
@@ -250,7 +362,6 @@ justify-content: center;
     height: 250px;
     padding: 10px;
     background-color: rgb(133, 161, 237);
-
 }
 
 .ofertaP{
@@ -264,134 +375,19 @@ justify-content: center;
     margin-bottom: 20px;
     border: 1px outset black
 }
+// CIERRE SECCIÓN OFERTA
 
-.imgGaleria:hover{
-    transform: scale(1.4)
-    
+// SECCIÓN CONTACTO
+.contacto{
+    width: 350px;
+    height: 180px;
+    padding: 20px;
+    margin: 10px
 }
-.background-img{
-    left: 50%;
-    min-height: 100%;
-    min-width: 100%;
-    opacity: .2;
-    top: 15%;
-    position: absolute;
-    transform: translate(-50%,-50%);
-    object-fit: contain;
-}
+// CIERRE SECCIÓN CONTACTO
 
-
-.start h1 {
-    margin-top: 20px;
-    text-align: center;
-    font-size: 3em;
-}
-
-.carouselImg{
-    width: 640px;
-    height: 480px;
-    justify-content: center;
-    
-    margin:50px
-}
-
-a:link{
-    color: blueviolet;
-}
-
-a:visited{
-    color: blue;
-}
-
-a:active{
-color:aquamarine
-
-}
-.registrese{
-    margin:40px;
-    text-align: center;
-}
-
-.ofrecemos{
-    margin: 150px;
-    text-align: center;
-}
-
-.main{
-    display: grid;
-    background-color: rgb(255, 255, 255);
-    margin-bottom: 1fr;
-    gap:10px;
-    grid-template-areas: 
-    "nav"
-    "header"
-    "galeria"
-    "footer";
-}
-
-header{
-    grid-area: header;
-    background-color: azure
-}
-
-nav{
-    grid-area: nav;
-    background-color: black;
-}
-.galeria{
-    grid-area: galeria;
-    background-color: rgba(94, 151, 249, 0.991);
-}
-footer{
-    grid-area: footer;
-    background-color: black
-     }
-
-     .red{
-        width: 40px;
-        height: 40px;
-        background-color: black;
-        color: black;
-        margin: 0px;
-        padding: 0px;
-    }
-
-    $botones: ( 
-        login:#006ba8cc, 
-        crear: #001f74, 
-    );
-    @each $boton, $color in $botones{
-        .btn--#{$boton}{
-            background-color: $color;
-            color: white;
-        }
-        
-    }
-
-    .parra{
-color: blue;
-font-family: Arial, Helvetica, sans-serif;
-    }
-    .parra--1{
-        @extend .parra;
-    }
-    .parra--2{
-        @extend .parra;
-    }
-    .parra--3{
-        @extend .parra;
-    }
-
-    @mixin flex-row-center{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-    }
-    .redes{
-        @include flex-row-center;
-    }
-
-     @media (min-width:500px){
+// MEDIA MIN-WIDTH
+@media (min-width:500px){
         .main{
             margin: 0;
             grid-template-areas: 
@@ -404,12 +400,10 @@ font-family: Arial, Helvetica, sans-serif;
             width: 350px;
             height: 300px;
         }
+}
     
-      }
-    
-      @media (min-width:768px){
+@media (min-width:768px){
         .main{
-           
             margin-bottom: 1.5em;
             grid-template-columns: 1fr 4fr 1fr;
             grid-template-areas: 
@@ -419,25 +413,29 @@ font-family: Arial, Helvetica, sans-serif;
             "footer footer footer";
         }
         
-
-    
         .galeria{
             background-color: rgba(94, 151, 249, 0.991);
-    
         }
     
        .imgGaleria{
             
             width: 200px;
             height: 150px;
-        }
+        }    
+}
+
+@media (min-width: 992px){
+
+    .navbar-expand-lg .navbar-collapse {
+        flex-direction: column-reverse;
+    }
+
+}
+
     
-          }
-    
-          @media(min-width:1024px){
+@media(min-width:1024px){
          
             .main{
-           
                 margin-bottom: 1.5em;
                 grid-template-columns: 1fr  1fr;
                 grid-template-areas: 
@@ -447,97 +445,16 @@ font-family: Arial, Helvetica, sans-serif;
                 "footer footer footer";
             }
             .imgGaleria{
-        
                 width: 400px;
                 height: 350px;
             }
+}    
+// CIERRE MEDIA MIN-WIDTH
 
-         }    
-
-         @media (max-width:500px){
-            .imgPrincipal{
-
-                display: flex;
-                padding: 30px;
-                width: 300px;
-                height: 200px;
-                border-radius: 1cm;
-                margin:80px auto;
-                justify-content: center;
-             }
-
-             }
-             .chicanot{
-                width: 300px;
-                height: 200px;
-                display: flex;
-                border-radius: 1cm;
-                border: 3px solid black;
-                margin:50px auto;
-               justify-content: center;
-            
-            }
-
-           .h3Busco{
-            padding: 50px;
-            font-size: 15px;
-           }
-
-           h2{
-            font-size: 20px;
-            padding: 50px;
-           }
-
-           span{
-            font-size: 20px;
-           }
-
-           .bienvenido{
-            color: #001f74;
-           }
-            
-
-            .carouselImg{
-                width: 250px;
-                height: 150px;
-    
-               
-            }
-
-            .h3Ofrecemos{
-                padding: 50px;
-                font-size: 15px;
-            
-            }
-
-            .ofertaP{
-                font-size: 15px;
-                font-weight: lighter;
-                color: black;
-                padding: 10px;
-                margin-right: 150px;
-                margin-top: 20px;
-                margin-left: 10px;
-                margin-bottom: 20px;
-                border: 1px outset black
-            }
-
-            .ofertaImg{
-                display: flex;
-                flex-direction: column;
-                flex-wrap: wrap;
-                justify-content: center;
-                width: 250px;
-                height: 150px;
-                padding: 10px;
-                background-color: rgb(133, 161, 237);
-            
-            }
-
-            @media (max-width:768px){
+// MEDIA MAX-WIDTH
+@media (max-width:768px){
 
                 .imgPrincipal{
-
                     display: flex;
                     padding: 30px;
                     width: 350px;
@@ -545,49 +462,152 @@ font-family: Arial, Helvetica, sans-serif;
                     border-radius: 1cm;
                     margin:80px auto;
                     justify-content: center;
-                 }
+                }
     
-                 }
-                 .chicanot{
-                    width: 350px;
-                    height: 250px;
-                    display: flex;
-                    border-radius: 1cm;
-                    border: 3px solid black;
-                    margin:50px auto;
+                .chicanot{
+                   width: 350px;
+                   height: 250px;
+                   display: flex;
+                   border-radius: 1cm;
+                   border: 3px solid black;
+                   margin:50px auto;
                    justify-content: center;
-                
                 }
 
                 .carouselImg{
                     width: 450px;
                     height: 300px;
-                    justify-content: center;
-                    margin:50px
+                }
+
+                .info h3 {
+                    margin: 20px 70px;
+                    font-size: 15px;
                 }
 
                 h2{
                     font-size: 25px;
                     padding: 50px;
                     border: 1px solid black;
-                   }
+                }
         
-                   span{
+                span{
                     font-size: 25px;
-                   }
+                }
+}
 
-                   .h3Busco{
-                    padding: 50px;
-                    font-size: 20px;
-                   }
+@media (max-width:500px){
+    .imgPrincipal{
 
-                   @media(max-width:1024px){
+        display: flex;
+        padding: 30px;
+        width: 300px;
+        height: 200px;
+        border-radius: 1cm;
+        margin:50px auto;
+        justify-content: center;
+     }
 
 
-                      }
-                    
+    .chicanot{
+        width: 300px;
+        height: 200px;
+        display: flex;
+        border-radius: 1cm;
+        border: 3px solid black;
+        margin:50px auto;
+       justify-content: center;
+    }
 
+    h2{
+    padding: 20px;
+    font-size: 20px;
+    }
 
-                  
-            
-        
+    span{
+    font-size: 20px;
+    }
+
+    .bienvenido{
+    color: #001f74;
+    }
+
+    .carouselImg{
+     width: 350px;
+     height: 200px; 
+    }
+
+    .ofertaP{
+        font-size: 15px;
+        font-weight: lighter;
+        color: black;
+        padding: 10px;
+        margin-right: 150px;
+        margin-top: 20px;
+        margin-left: 10px;
+        margin-bottom: 20px;
+        border: 1px outset black
+    }
+
+    .ofertaImg{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 250px;
+        height: 150px;
+        padding: 10px;
+        background-color: rgb(133, 161, 237);
+    }
+
+}
+
+@media (max-width:350px){
+    main h1 {
+        font-size: 30px;
+    }
+
+    .imgPrincipal{
+        padding: 10px;
+        width: 200px;
+        height: 150px;
+    }
+
+    .chicanot{
+        width: 250px;
+        height: 150px;
+        margin: 10px;
+    }
+
+    .container-img-list{
+        margin-bottom: 0;
+    }
+
+    a{
+        font-size: 15px;
+        margin: 10px;
+    }
+
+    h2{
+        text-align: justify;
+        font-size: 18px;
+        margin: 0;
+    }
+
+    h3 {
+        font-size: 18px;
+        text-align: justify;
+        margin: 15px;
+    }
+
+    .container-img-list li {
+        font-size: 18px;
+        margin: 5px;
+    }
+
+    .info h3 {
+        margin: 10px 30px;
+        font-size: 15px;
+    }
+}
+// CIERRE MEDIA MAX-WIDTH
+

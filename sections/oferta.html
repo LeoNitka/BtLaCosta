@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/estilos.css">
     <title>Oferta - BtLaCosta</title>
     <meta name="description" content="Ofertas de trabajo">
     <meta name="author" content="Leonardo Nitka">
@@ -18,94 +18,100 @@
     <meta property="og:image" content=https://btlacosta.000webhostapp.com/img/BTgrey.png>
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-            
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                  <a class="nav-link active" href="../index.html">INICIO</a>
-                  <a class="nav-link active" aria-current="page" href="../sections/oferta.html">OFERTA</a>
-                  <a class="nav-link active" href="../sections/demanda.html">DEMANDA</a>
-                  <a class="nav-link active" href="../sections/galeria.html">GALERIA</a>
-                  <a class="nav-link active" href="../sections/contacto.html">CONTACTO</a>
-                </div>
+  <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link active" href="../index.html">INICIO</a>
+                <a class="nav-link active" aria-current="page" href="../sections/oferta.html">OFERTA</a>
+                <a class="nav-link active" href="../sections/demanda.html">DEMANDA</a>
+                <a class="nav-link active" href="../sections/galeria.html">GALERIA</a>
+                <a class="nav-link active" href="../sections/contacto.html">CONTACTO</a>
               </div>
             </div>
-          </nav>
-    </header>
-  
-    <section>
-        <h2>Realiza una publicacion:</h2>
-    </section>
+          </div>
+        </nav>
+  </header>
+
+  <div class="publicar">
+    <h2>Realiza una publicacion:</h2>
     <br>
-    
-    <section>
-        <article>
-            <h4>Localidad:</h4>
-            <form action="#">
-            <label for="Localidad"></label>
+  
+    <h4>Localidad:</h4>
+    <form action="#">
+        <label for="Localidad"></label>
         <select name="Localidad" id="Localidad"> 
-        <option value="Costa Esmeralda">Costa Esmeralda</option>
-        <option value="Pinar del Sol - Villa Robles">Pinar del Sol - Villa Robles</option>
-        <option value="San Clemente del Tuyú">San Clemente del Tuyú</option>
-        <option value="Las Toninas">Las Toninas</option>
-        <option value="Santa Teresita">Santa Teresita</option>
-        <option value="Mar del Tuyú">Mar del Tuyú</option>
-        <option value="Costa del Este">Costa del Este</option>
-        <option value="Aguas Verdes">Aguas Verdes</option>
-        <option value="La Lucila del Mar">La Lucila del Mar</option>
-        <option value="Costa Azul">Costa Azul</option>
-        <option value="San Bernardo">San Bernardo</option>
-        <option value="Mar de Ajó">Mar de Ajó</option>
-        <option value="Nueva Atlantis">Nueva Atlantis</option>
-        </select><br>
+           <option value="Costa Esmeralda">Costa Esmeralda</option>
+           <option value="Pinar del Sol - Villa Robles">Pinar del Sol - Villa Robles</option>
+           <option value="San Clemente del Tuyú">San Clemente del Tuyú</option>
+           <option value="Las Toninas">Las Toninas</option>
+           <option value="Santa Teresita">Santa Teresita</option>
+           <option value="Mar del Tuyú">Mar del Tuyú</option>
+           <option value="Costa del Este">Costa del Este</option>
+           <option value="Aguas Verdes">Aguas Verdes</option>
+           <option value="La Lucila del Mar">La Lucila del Mar</option>
+           <option value="Costa Azul">Costa Azul</option>
+           <option value="San Bernardo">San Bernardo</option>
+           <option value="Mar de Ajó">Mar de Ajó</option>
+           <option value="Nueva Atlantis">Nueva Atlantis</option>
+        </select>
+    </form>
 
-            <br><label for="Nombre del lugar"></label>Nombre del lugar*:
-            <input type="text" name="Nombre del lugar">
-            <br>
-            <form action="#">
-            <label for="Direccion"></label>Direccion:
-            <input type="text" name="Direccion"><br>
-            <br>
-            <label for="Adjuntar imagen"></label>Adjuntar imagen:
-            <input type="file"><br>
-            <br>
-            <h5>*campo obligatorio</h5><br>
-            <label for="Texto del mensaje"> Descripcion*:<br>
-			<textarea type="Texto del mensaje" name="Texto del mensaje"></textarea><br>
-            <input type="submit" value="Publicar"><br> <br>
-            <label for="Palabra clave"></label>
-             <p> Realiza tu busqueda:<input type="search" name="Palabra clave" placeholder="Palabra clave"> 
-              <input type="search" name="Localidad" placeholder="Localidad"> <input type="submit" value="Buscar"> </p> 
-      
-            </form>
-</article>
-</section>
-<h5>Publicaciones recientes y destacadas</h5><br>
-<div>
+    <form action="#">
+        <br>
+        <label for="Nombre del lugar"></label>
+         Nombre del lugar*:
+        <input type="text" name="Direccion"><br>
+        <br>
+        <label for="Direccion"></label>
+         Direccion:
+        <input type="text" name="Direccion"><br>
+        <br>
+        <label for="Adjuntar imagen"></label>Adjuntar imagen:
+        <input type="file"><br>
+        <br>
+        <h5>*campo obligatorio</h5><br>
+        <label for="Texto del mensaje"> Descripcion*:<br>
+        <textarea type="Texto del mensaje" name="Texto del mensaje"></textarea><br>
+        <input type="submit" value="Publicar"><br> <br>
+        <label for="Palabra clave"></label>
+    </form>
+  
+  <div class="busqueda">
+    <form action="#">
+        <p> Realiza tu busqueda:<input type="search" name="Palabra clave" placeholder="Palabra clave"> 
+          <input type="search" name="Localidad" placeholder="Localidad"> <input type="submit" value="Buscar"> 
+        </p> 
+    </form>
+  </div>
 
-    <img class="publicaciones" src="../img/publi1.png" alt="publi-normal">
-    <img class="publicaciones" src="../img/publi2.png" alt="publi-destacada">
-    <img class="publicaciones" src="../img/publi3.png" alt="publi-normal2">
-    <p class="ofertaP">SE PRIORIZAN LOS POSTULANTES QUE RESIDAN EN LA LOCALIDAD DE MAR DE AJÓ O SAN BERNARDO✅
-        Se agradece compartir la publicación. <img class="ofertaImg" src="../img/delivery.jpg" alt="delivery"></p>
-     <img class="ofertaImg" src="../img/paucam.jpg" alt="publi-normal3">   
-</div>
+  <div class="anuncios"></div>
+    <h5>Publicaciones recientes y destacadas</h5><br>
+    <div>
+      <img class="publicaciones" src="../img/publi1.png" alt="publi-normal">
+      <img class="publicaciones" src="../img/publi2.png" alt="publi-destacada">
+      <img class="publicaciones" src="../img/publi3.png" alt="publi-normal2">
+      <p class="ofertaP">
+        SE PRIORIZAN LOS POSTULANTES QUE RESIDAN EN LA LOCALIDAD DE MAR DE AJÓ O SAN BERNARDO✅
+        Se agradece compartir la publicación. <img class="ofertaImg" src="../img/delivery.jpg" alt="delivery">
+      </p>
+      <img class="ofertaImg" src="../img/paucam.jpg" alt="publi-normal3">   
+  </div>
 
 
-    <footer class="redes">
-        <div>
-            <img class="red" src="../img/logo3.png" alt="logo busco trabajo la costa">
-            <img class="red" src="../img/fb.svg" alt="facebook">
-            <img class="red" src="../img/ig.svg" alt="instagram">
-            <img class="red" src="../img/tw.svg" alt="twiter">
-        </div>
-    
-       </footer>
-       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <footer class="redes">
+      <div>
+          <img class="red" src="../img/logo3.png" alt="logo busco trabajo la costa">
+          <img class="red" src="../img/fb.svg" alt="facebook">
+          <img class="red" src="../img/ig.svg" alt="instagram">
+          <img class="red" src="../img/tw.svg" alt="twiter">
+      </div>
+  </footer>
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
