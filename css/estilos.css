@@ -70,7 +70,7 @@ nav ul {
 h1 {
   position: relative;
   font-style: italic;
-  font-family: "Arima", cursive;
+  font-family: "Roboto", sans-serif;
   text-align: center;
   font-weight: bolder;
   color: black;
@@ -138,12 +138,11 @@ main h1 {
 
 .carousel-container {
   margin-top: 45px;
-  background: #001f74;
+  background: #1d1927;
 }
 
 .carousel-control-next, .carousel-control-prev {
-  color: aqua;
-  background-color: #001f74;
+  background-color: #1d1927;
 }
 
 .carouselImg {
@@ -176,7 +175,7 @@ main h1 {
 }
 
 .container-img-list {
-  background: #001f74;
+  background: #1d1927;
   padding: 30px 0 20px;
   margin-bottom: 50px;
 }
@@ -375,11 +374,22 @@ main h1 {
 .tituloOferta {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bolder;
+  color: whitesmoke;
 }
 
 .tituloOferta2 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bolder;
+}
+
+.publicar {
+  margin: 10px;
+  background-color: #564a77;
+  color: whitesmoke;
+}
+
+h4 {
+  color: whitesmoke;
 }
 
 .sectionContacto {
@@ -468,11 +478,13 @@ label {
 @media (min-width: 768px) {
   .main {
     margin-bottom: 1.5em;
-    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "nav nav nav" "header header header" "galeria galeria galeria" "footer footer footer";
   }
   .galeria {
     background-color: rgba(94, 151, 249, 0.991);
+    display: grid;
+    gap: 20px;
   }
   .imgGaleria {
     width: 200px;
@@ -487,7 +499,7 @@ label {
 @media (min-width: 1024px) {
   .main {
     margin-bottom: 1.5em;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "nav nav nav" "header header header" "galeria galeria galeria" "footer footer footer";
   }
   .imgGaleria {
