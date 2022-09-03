@@ -333,15 +333,25 @@ main h1 {
   color: black;
 }
 
-.publicaciones {
+.publicar {
+  margin: 10px;
+  background-color: #564a77;
+  color: whitesmoke;
+}
+
+.anuncios {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 400px;
-  height: 200px;
-  padding: 10px;
-  margin-top: 20px;
+  align-items: center;
+}
+
+.anuncios h5 {
+  text-align: center;
+}
+
+.listOferta {
+  position: relative;
+  width: 100%;
 }
 
 .ofertaImg {
@@ -353,45 +363,82 @@ main h1 {
   height: 250px;
   padding: 10px;
   background-color: rgb(133, 161, 237);
-  margin-top: 20px;
 }
 
 .ofertaP {
   display: flex;
-  flex-direction: row-reverse;
+  flex-wrap: wrap;
   font-size: 18px;
   font-weight: lighter;
-  color: black;
+  background: #f1f1f1;
   padding: 10px;
-  margin-right: 150px;
-  margin-top: 20px;
-  margin-left: 10px;
-  margin-bottom: 20px;
-  background-color: #6f95fc;
-  border-radius: 20px;
+  margin: 10px;
+  border-radius: 5px;
+  justify-content: center;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.ofertaDestacada {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  font-weight: lighter;
+  background: #322185;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.ofertaDestacada p {
+  color: #f1f1f1;
+}
+
+.text-oferta {
+  margin: 10px;
+  padding: 10px;
+  font-size: 13px;
+}
+
+.text-oferta span {
+  font-size: 15px;
 }
 
 .tituloOferta {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bolder;
-  color: whitesmoke;
+  color: white;
 }
 
 .tituloOferta2 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bolder;
+  color: white;
 }
 
-.publicar {
-  margin: 10px;
-  background-color: #564a77;
-  color: whitesmoke;
+@media (min-width: 768px) {
+  .text-oferta {
+    margin: 20px;
+    font-size: 20px;
+  }
+  .text-oferta span {
+    font-size: 25px;
+  }
 }
-
-h4 {
-  color: whitesmoke;
+@media (min-width: 500px) {
+  .text-oferta {
+    margin: 20px;
+    font-size: 18px;
+  }
+  .text-oferta span {
+    font-size: 21px;
+  }
 }
-
+@media (min-width: 1024px) {
+  .anuncios {
+    margin: auto 100px;
+  }
+}
 .sectionContacto {
   display: flex;
   flex-direction: column;
