@@ -284,8 +284,8 @@ main h1 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  background-color: #c4d4ff;
+  justify-content: center;
+  background-color: #7bb4ff;
   padding: 30px;
 }
 
@@ -309,28 +309,9 @@ main h1 {
   margin: 10px;
 }
 
-.demandaImg {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 550px;
-  height: 450px;
-  padding: 10px;
-}
-
-.demandaP {
-  font-size: 18px;
-  font-weight: lighter;
-  color: black;
-  padding: 10px;
-  margin-right: 150px;
-  margin-top: 10px;
-  margin-left: 50px;
-  margin-bottom: 10px;
-  border: 1px outset black;
-  background-color: rgb(102, 186, 255);
-  color: black;
+.demandaColor {
+  background-color: #0049b8;
+  color: white;
 }
 
 .publicar {
@@ -359,8 +340,8 @@ main h1 {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-  width: 350px;
-  height: 250px;
+  width: 400px;
+  height: 350px;
   padding: 10px;
   background-color: rgb(133, 161, 237);
 }
@@ -381,6 +362,7 @@ main h1 {
 .ofertaDestacada {
   display: flex;
   flex-direction: row-reverse;
+  flex-wrap: wrap;
   justify-content: center;
   font-weight: lighter;
   background: #322185;
@@ -534,8 +516,8 @@ label {
     gap: 20px;
   }
   .imgGaleria {
-    width: 200px;
-    height: 150px;
+    width: 300px;
+    height: 200px;
   }
 }
 @media (min-width: 992px) {
@@ -628,7 +610,7 @@ label {
     font-weight: lighter;
     color: black;
     padding: 10px;
-    margin-right: 150px;
+    margin-right: 10px;
     margin-top: 20px;
     margin-left: 10px;
     margin-bottom: 20px;
@@ -639,8 +621,8 @@ label {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    width: 250px;
-    height: 150px;
+    width: 300px;
+    height: 300px;
     padding: 10px;
     background-color: rgb(133, 161, 237);
   }
@@ -690,5 +672,8 @@ label {
   .info h3 {
     margin: 10px 30px;
     font-size: 15px;
+  }
+  .ofertaImg {
+    height: 300px;
   }
 }
