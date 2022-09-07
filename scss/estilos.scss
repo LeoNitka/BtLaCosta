@@ -17,11 +17,6 @@ header{
     width: 100%;
 }
 
-header{
-    grid-area: header;
-    background-color: azure
-}
-
 a{
     text-decoration: none;
     display: inline-block;
@@ -55,10 +50,7 @@ ul li:hover{
     color: whitesmoke;
 }
 
-nav{
-    grid-area: nav;
-    background-color: black;
-}
+
 
 nav ul{
     display: flex;
@@ -130,10 +122,7 @@ footer{
     background-color: black;
 }
 
-footer{
-    grid-area: footer;
-    background-color: black;
-}
+
 
 main h1 {
     margin-top: 50px;
@@ -305,9 +294,24 @@ background-color: #c4d4ff;
     "footer";
 }
 
+header{
+    grid-area: header;
+    background-color: azure
+}
+
 .galeria{
     grid-area: galeria;
     background-color:  #c4d4ff ;
+}
+
+footer{
+    grid-area: footer;
+    background-color: black;
+}
+
+nav{
+    grid-area: nav;
+    background-color: black;
 }
 
 .flex-container{
@@ -344,7 +348,6 @@ background-color: #c4d4ff;
 // CIERRE SECCIÓN GALERIA
 
 // SECCIÓN DEMANDA
-
 
 
 .demandaColor{
@@ -454,6 +457,16 @@ background-color: #c4d4ff;
     margin-left:10px;
     }
 
+    @media (min-width: 500px) {
+        .text-oferta{
+            margin: 20px;
+            font-size: 18px;
+        }
+        .text-oferta span{
+            font-size: 21px;
+        }
+    }
+
 @media (min-width: 768px) {
     .text-oferta{
         margin: 20px;
@@ -461,16 +474,6 @@ background-color: #c4d4ff;
     }
     .text-oferta span{
         font-size: 25px;
-    }
-}
-
-@media (min-width: 500px) {
-    .text-oferta{
-        margin: 20px;
-        font-size: 18px;
-    }
-    .text-oferta span{
-        font-size: 21px;
     }
 }
 
@@ -562,6 +565,7 @@ label {
     }
 }
 // CIERRE SECCIÓN CONTACTO
+
 // MEDIA MIN-WIDTH
 @media (min-width:500px){
         .main{
