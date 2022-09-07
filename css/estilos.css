@@ -285,7 +285,7 @@ nav {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: #7bb4ff;
+  background-color: #1d1927;
   padding: 30px;
 }
 
@@ -297,7 +297,7 @@ nav {
 .imgGaleria {
   width: 290px;
   height: 190px;
-  background-color: azure;
+  border: 3px solid goldenrod;
   position: relative;
 }
 
