@@ -168,8 +168,10 @@ main h1 {
 .container-img-list li {
   margin-top: 30px;
   color: #f1f1f1;
-  text-align: center;
-  list-style: inside;
+  text-align: left;
+  list-style: none;
+  margin: 5px;
+  padding: 10px;
 }
 
 .info h3 {
@@ -244,12 +246,30 @@ main h1 {
 .parra, .parra--3, .parra--2, .parra--1 {
   color: blue;
   font-family: Arial, Helvetica, sans-serif;
+  padding: 15px;
 }
 
 .redes {
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+.input-text {
+  border-radius: 8px;
+  background-color: rgba(228, 228, 228, 0.897);
+  color: black;
+}
+
+.input-boton {
+  background-color: black;
+  color: white;
+}
+
+textarea {
+  resize: none;
+  width: 30%;
+  height: 100px;
 }
 
 .main {
@@ -299,6 +319,7 @@ nav {
   height: 190px;
   border: 3px solid goldenrod;
   position: relative;
+  transition: ease all 0.5s;
 }
 
 .imgGaleria:hover {
@@ -316,6 +337,13 @@ nav {
 
 .demandaColor article {
   margin-left: 10px;
+}
+
+.anuncios {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .publicar {
@@ -458,7 +486,7 @@ nav {
   border: 1px solid rgba(28, 41, 129, 0.3);
   color: #f1f1f1;
   resize: none;
-  width: 200px;
+  width: 400px;
 }
 
 label {
@@ -633,14 +661,12 @@ label {
     padding: 10px;
     background-color: rgb(133, 161, 237);
   }
+  textarea {
+    resize: none;
+    width: 250px;
+    height: 100px;
+  }
 }
-.anuncios {
-  margin: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 @media (max-width: 350px) {
   main h1 {
     font-size: 30px;
@@ -683,4 +709,92 @@ label {
   .ofertaImg {
     height: 300px;
   }
+}
+.mainLogin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.colorLogin {
+  background-color: #37649e;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  margin-top: 60px;
+  background-color: #ffffff;
+  width: 85%;
+  border-radius: 5px;
+  box-shadow: 8px 4px 11px -1px rgba(0, 0, 0, 0.75);
+}
+
+@media (min-width: 500px) {
+  .login-container {
+    width: 50%;
+  }
+}
+@media (min-width: 768px) {
+  .login-container {
+    width: 40%;
+  }
+}
+.login-container input {
+  border: 1px solid #e0e0e0;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.form-body {
+  margin: 30px auto 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.input-container {
+  display: flex;
+  gap: 5px;
+  align-items: baseline;
+}
+
+.span {
+  color: #2619d6;
+  font-size: 0.8rem;
+  margin: 10px;
+}
+
+.btn {
+  width: 70%;
+  height: 50px;
+  background-color: rgba(0, 107, 168, 0.8);
+  border-radius: 3px;
+  color: #ffffff;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.login-p {
+  font-size: 15px;
+  text-align: center;
+  margin: 5px 20px 20px;
+  padding: 0;
+}
+
+.btn-2 {
+  width: 70%;
+  height: 50px;
+  background-color: #001f74;
+  border-radius: 3px;
+  color: #ffffff;
+}
+
+.btn-2:hover {
+  cursor: pointer;
 }

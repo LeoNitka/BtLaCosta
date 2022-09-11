@@ -171,6 +171,7 @@ main h1 {
 }
 
 .container-img-list{
+  
     background: #1d1927;
     padding: 30px 0 20px;
     margin-bottom: 50px;
@@ -179,8 +180,11 @@ main h1 {
 .container-img-list li{
     margin-top: 30px;
     color: #f1f1f1;
-    text-align: center;
-    list-style:inside;
+    text-align: left;
+    list-style:none;
+    margin: 5px;
+    padding: 10px;
+    
 }
 
 .info h3{
@@ -258,6 +262,7 @@ background-color: #c4d4ff;
 .parra{
         color: blue;
         font-family: Arial, Helvetica, sans-serif;
+        padding:15px;
 }
 .parra--1{
         @extend .parra;
@@ -280,6 +285,21 @@ background-color: #c4d4ff;
     @include flex-row-center;
 }
 
+.input-text{
+border-radius: 8px;
+background-color: rgba(228, 228, 228, 0.897);
+color:black;
+}
+
+.input-boton{
+    background-color: black;
+    color: white;
+}
+textarea{
+    resize: none;
+    width: 30%;
+    height: 100px;
+}
 
 // SECCIÓN GALERIA:
 .main{
@@ -302,6 +322,7 @@ header{
 .galeria{
     grid-area: galeria;
     background-color:  #c4d4ff ;
+
 }
 
 footer{
@@ -334,6 +355,7 @@ nav{
     height: 190px;
     border: 3px solid goldenrod;
     position: relative;
+    transition: ease all 0.5s;
 }
 
 .imgGaleria:hover{
@@ -360,6 +382,14 @@ nav{
 
     margin-left: 10px;
 
+}
+
+.anuncios{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
 }
 // CIERRE SECCIÓN DEMANDA
 
@@ -518,7 +548,7 @@ nav{
     border: 1px solid rgba(28, 41, 129, 0.3);
     color: #f1f1f1;
     resize: none;
-    width: 200px;
+    width: 400px;
 }
 
 label {
@@ -527,6 +557,7 @@ label {
 
 .form-container{
     text-align: center;
+    
 }
 
 .contacto{
@@ -744,15 +775,17 @@ label {
         background-color: rgb(133, 161, 237);
     }
 
+    textarea{
+        resize: none;
+        width: 250px;
+        height: 100px;
+    }
+    
+
 }
 
-.anuncios{
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-}
+
+
 
 @media (max-width:350px){
     main h1 {
@@ -773,7 +806,10 @@ label {
 
     .container-img-list{
         margin-bottom: 0;
+        
     }
+   
+    
 
     a{
         font-size: 15px;
@@ -810,3 +846,96 @@ height: 300px;
 }
 // CIERRE MEDIA MAX-WIDTH
 
+
+//SECCION LOGIN
+
+.mainLogin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:100%;
+   
+}
+
+.colorLogin{
+    background-color: #37649e;
+
+}
+.login-container{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    margin-top: 60px;
+    background-color: #ffffff;
+    width: 85%;
+    border-radius: 5px;
+    box-shadow: 8px 4px 11px -1px rgba(0,0,0,0.75);
+}
+@media (min-width: 500px){
+    .login-container{
+        width: 50%;
+    }
+}
+@media (min-width: 768px){
+    .login-container{
+        width: 40%;
+    }
+}
+
+.login-container input{
+    border: 1px solid #e0e0e0;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.form-body{
+    margin: 30px auto 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.input-container{
+    display: flex;
+    gap: 5px;
+    align-items: baseline;
+}
+
+.span{
+    color: #2619d6;
+    font-size: .8rem;
+    margin: 10px;
+}
+
+.btn{
+    width: 70%;
+    height: 50px;
+    background-color: #006ba8cc;
+    border-radius: 3px;
+    color: #ffffff;
+}
+
+.btn:hover{
+    cursor: pointer;
+}
+
+.login-p{
+    font-size: 15px;
+    text-align: center;
+    margin: 5px 20px 20px;
+    padding: 0;
+}
+
+.btn-2{
+    width: 70%;
+    height: 50px;
+    background-color: #001f74;
+    border-radius: 3px;
+    color: #ffffff;
+}
+.btn-2:hover{
+    cursor: pointer;
+}
+
+//CIERRE LOGIN
