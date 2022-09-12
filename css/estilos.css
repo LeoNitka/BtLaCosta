@@ -486,6 +486,10 @@ nav {
     width: 30%;
   }
 }
+.form-check .form-check-input {
+  float: none;
+}
+
 @media (min-width: 500px) {
   .main {
     margin: 0;
@@ -725,7 +729,7 @@ nav {
   margin: 10px;
 }
 
-.btn {
+.btnn {
   width: 70%;
   height: 50px;
   background-color: rgba(0, 107, 168, 0.8);
@@ -733,7 +737,7 @@ nav {
   color: #ffffff;
 }
 
-.btn:hover {
+.btnn:hover {
   cursor: pointer;
 }
 

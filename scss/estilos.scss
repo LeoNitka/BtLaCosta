@@ -548,6 +548,12 @@ nav{
         width: 30%;
     }
 }
+
+.form-check .form-check-input{
+
+    float:none;
+
+}
 // CIERRE SECCIÓN CONTACTO
 
 // MEDIA MIN-WIDTH
@@ -861,7 +867,7 @@ height: 300px;
     margin: 10px;
 }
 
-.btn{
+.btnn{
     width: 70%;
     height: 50px;
     background-color: #006ba8cc;
@@ -869,7 +875,7 @@ height: 300px;
     color: #ffffff;
 }
 
-.btn:hover{
+.btnn:hover{
     cursor: pointer;
 }
 
