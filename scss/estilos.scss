@@ -516,83 +516,36 @@ nav{
 
 
 // SECCIÓN CONTACTO
-.sectionContacto{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #37649e;
-    color: #f1f1f1;
-    margin: 50px 50px;
-    border-radius: 50px;
-    padding: 50px;
-    -webkit-box-shadow: 10px 1px 20px 9px rgba(163,163,212,0.61);
-    -moz-box-shadow: 10px 1px 20px 9px rgba(163,163,212,0.61);
-    box-shadow: 10px 1px 20px 9px rgba(163,163,212,0.61);
-}
-
-.sectionContacto input{
-    /* From https://css.glass */
-    background: rgba(28, 41, 129, 0.19);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(28, 41, 129, 0.3);
-    color: #f1f1f1;
-}
-
-.sectionContacto textarea{
-    background: rgba(28, 41, 129, 0.19);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(28, 41, 129, 0.3);
-    color: #f1f1f1;
-    resize: none;
-    width: 400px;
-}
-
-label {
-    display:inline;
-}
-
 .form-container{
     text-align: center;
-    
+    margin: 20px;
 }
 
-.contacto{
-    width: 300px;
-    height: 200px;
+.form-group{
+    margin: 30px;
+}
+
+.form-group textarea {
+    resize: none;
+   
+}
+
+.form-container .contacto{
     padding: 10px;
     margin: 10px;
-    position: relative;
-    width: 110%;
-    height: 110%;
+    width: 75%;
+    height: 10%;
 }
 
 @media (min-width: 500px){
-    .sectionContacto{
-        margin: 50px 100px;
-        padding: 30px;
         .contacto{
             width: 80%;
         }
-    }
-    }
-
-
-@media (min-width: 768px){
-    .sectionContacto{
-        margin: 50px 200px;
-    }
 }
 
 @media (min-width: 1024px){
-    .sectionContacto{
-        margin: 50px 300px;
-        .contacto{
-            width: 50%;
-        }
+    .form-container .contacto{
+        width: 30%;
     }
 }
 // CIERRE SECCIÓN CONTACTO
