@@ -19,11 +19,23 @@ class Publicacion {
      this.descripcion = descripcion;
     }
 }
+const listaPublicacion = [
+    {localidad: 'San Bernardo', 
+     nombreDelLugar:'Barbaros ',
+     direccion: 'Av.San Bernardo 200',
+     descripcion:'Se busca ayudante de cocina y camarera',
+    },
+    {
+    localidad: 'Mar de ajo', 
+    nombreDelLugar:'Pimenton',
+    direccion: 'Hipolito Yrigoyen 51',
+    descripcion:'Se necesito mozo/camarera con experiencia',   
+    }
+];
 
-const publi1 = new Publicacion("San Bernardo", "barbaros", "Av.sanBernardo 200", "Se busca ayudante de cocina y camarera");
-const publi2 = new Publicacion("Mar De Ajo", "Pimenton", "Hipolito Yrigoten 51",  "Se necesito mozo/camarera con experiencia");
-console.log(publi1);
-console.log(publi2);
+
+console.log(listaPublicacion);
+
 
 
 const crearPublicacion = ()=> {
@@ -33,12 +45,18 @@ const crearPublicacion = ()=> {
     let descripcion = prompt("ingresar descripcion");
 
     
-    const publicacion = new Publicacion(localidad,nombreDelLugar,direccion,descripcion);
-    console.log(publicacion);
-    return publicacion;
+    let publicacion = new Publicacion(localidad,nombreDelLugar,direccion,descripcion);
+    listaPublicacion.push(publicacion);
+    console.log(listaPublicacion);
+    return listaPublicacion;
 }
 
 crearPublicacion();
+
+
+
+
+
 
 
 
