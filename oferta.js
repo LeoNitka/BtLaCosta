@@ -28,7 +28,7 @@ class Publicacion {
 
 
 
-const listaPublicacion = [
+const listaPublicacion = [ 
     {localidad: 'San Bernardo', 
      nombreDelLugar:'Barbaros ',
      direccion: 'Av.San Bernardo 200',
@@ -53,11 +53,10 @@ const crearPublicacion = ()=> {
     let direccion = prompt("ingresar direccion");
     let descripcion = prompt("ingresar descripcion");
 
-    
     let publicacion = new Publicacion(localidad,nombreDelLugar,direccion,descripcion);
-    listaPublicacion.push(publicacion);
-    console.log(listaPublicacion);
-    return listaPublicacion;
+    publicacion.almacenarPubli()
+    console.log(publicacion);
+    return publicacion;
 }
 
 crearPublicacion();
