@@ -17,8 +17,17 @@ class Publicacion {
      this.nombreDelLugar = nombreDelLugar;
      this.direccion = direccion;
      this.descripcion = descripcion;
+     this.almacenar=[]
+    }
+
+    almacenarPubli(){
+
+       this.almacenar.push(this.localidad,this.nombreDelLugar,this.direccion,this.descripcion);
     }
 }
+
+
+
 const listaPublicacion = [
     {localidad: 'San Bernardo', 
      nombreDelLugar:'Barbaros ',
