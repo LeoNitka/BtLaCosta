@@ -17,24 +17,23 @@ class Publicacion {
      this.nombreDelLugar = nombreDelLugar;
      this.direccion = direccion;
      this.descripcion = descripcion;
-     this.almacenar=[]
+    
     }
 
-    almacenarPubli(){
-
-       this.almacenar.push(this.localidad,this.nombreDelLugar,this.direccion,this.descripcion);
-    }
+    
 }
 
 
 
 const listaPublicacion = [ 
-    {localidad: 'San Bernardo', 
+    {id:1,
+     localidad: 'San Bernardo', 
      nombreDelLugar:'Barbaros ',
      direccion: 'Av.San Bernardo 200',
      descripcion:'Se busca ayudante de cocina y camarera',
     },
     {
+    id:2, 
     localidad: 'Mar de ajo', 
     nombreDelLugar:'Pimenton',
     direccion: 'Hipolito Yrigoyen 51',
@@ -48,18 +47,37 @@ console.log(listaPublicacion);
 
 
 const crearPublicacion = ()=> {
-    let localidad = prompt("seleccionar localidad");
-    let nombreDelLugar = prompt("ingresar nombre del lugar");
-    let direccion = prompt("ingresar direccion");
-    let descripcion = prompt("ingresar descripcion");
+    let localidad = document.getElementById("localidad").value;
+    let nombreDelLugar = document.getElementById("nombreDelLugar").value;
+    let direccion = document.getElementById("direccion").value;
+    let descripcion = document.getElementById("descripcion").value;
 
-    let publicacion = new Publicacion(localidad,nombreDelLugar,direccion,descripcion);
-    publicacion.almacenarPubli()
-    console.log(publicacion);
-    return publicacion;
+    let nuevaPublicacion = new Publicacion(localidad,nombreDelLugar,direccion,descripcion);
+    listaPublicacion.push(nuevaPublicacion);
 }
 
-crearPublicacion();
+listaPublicacion.forEach(publicacion => {
+    let contenedorPublicacion = document.createElement("div");
+    contenedorPublicacion.className = 'ofertaP';
+    contenedorPublicacion.innerHTML = `
+                                 <h3>${publicacion.localidad}</h3>  
+                                 <h3>${publicacion.nombreDelLugar}</h3>
+                                 <h3>${publicacion.direccion}</h3>
+                                 <p class="text-oferta">
+                                 ${publicacion.descripcion}
+
+                                 </p>
+                                 `;
+    document.querySelector(".listOferta").append(contenedorPublicacion);
+})
+
+let publicar= document.querySelector(".input-boton")
+
+publicar.addEventListener ("submit", ()=>{
+
+        crearPublicacion();
+}
+)
 
 
 
