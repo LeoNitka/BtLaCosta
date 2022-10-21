@@ -60,6 +60,13 @@ publicar.addEventListener("submit", (e)=>{
     localStorage.setItem("publicacion", JSON.stringify(listaPublicacion));
 
     crearPublicacion(nuevaPublicacion);
+    Toastify({
+
+        text: "Publicacion realizada",
+        
+        duration: 5000
+        
+        }).showToast();
     console.log(listaPublicacion)
 
 
@@ -69,7 +76,38 @@ publicar.addEventListener("submit", (e)=>{
 
 })
 
+// Buscador
 
+document.querySelector('#botonBuscador').addEventListener('click', 
+function searchPost(e){
+    e.preventDefault();
+    
+    //Get value of the input
+    const searchValue = document.querySelector('#buscarPalabra').value.toUpperCase();
+    const searchValue2 = document.querySelector('#buscarLocalidad').value.toUpperCase();
+    //Get all posts from the post container
+    const allPosts = (document.querySelector('.listOferta')).querySelectorAll('div');
+    //for loop #1 (used to pass all the posts)
+    for(let i = 0; i < allPosts.length; i++){
+        let count = 0;
+        //Get all element of each line
+        const postValues = allPosts[i].querySelectorAll('span,p');
+        for(let j = 0; j < postValues.length; j++){
+            //Check if any word of the post starts with the input search string
+            if((postValues[j].innerHTML.toUpperCase()).includes(searchValue) || (postValues[j].innerHTML.toUpperCase()).includes(searchValue2)  ) {
+                count++;
+            } 
+        }
+        if(count > 0){
+            //If any element contains the search value then display block
+            allPosts[i].style.display = '';
+        }else{
+            //Else display none
+            allPosts[i].style.display = 'none';
+        }
+    }
+    
+})
 
 
 
