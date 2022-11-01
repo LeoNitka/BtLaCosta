@@ -94,7 +94,7 @@ function searchPost(e){
         const postValues = allPosts[i].querySelectorAll('span,p');
         for(let j = 0; j < postValues.length; j++){
             //Check if any word of the post starts with the input search string
-            if((postValues[j].innerHTML.toUpperCase()).includes(searchValue) || (postValues[j].innerHTML.toUpperCase()).includes(searchValue2)  ) {
+            if((postValues[j].innerHTML.toUpperCase()).includes(searchValue) && (postValues[j].innerHTML.toUpperCase()).includes(searchValue2)  ) {
                 count++;
             } 
         }
@@ -109,6 +109,22 @@ function searchPost(e){
     
 })
 
+
+const obtenerDatos = ()=> {
+    fetch("../publicacionesOferta.json")
+        .then(response => response.json())
+        .then(result => {
+            const datos = result;
+            datos.forEach(dato => {
+                contenedor.innerHTML += `
+                    <h3>${dato.localidad}</h3>
+                    <p>edad: ${dato.nombreDelLugar} - profesion ${dato.direccion}</p>
+                `
+            })
+        })
+}
+
+obtenerDatos()
 
 
 
