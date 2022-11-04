@@ -1,9 +1,5 @@
 [
-    {"Localidad": "San Bernardo", "nombreDelLugar":"SubUrban", "direccion":"AV. 159 33", "descripcion":"Buscan cajero o cajera en tienda de ropa"},
-    {"Localidad": "Juan", "nombreDelLugar":35, "direccion":"carpintero", "descripcion":35},
-    {"Localidad": "Juan", "nombreDelLugar":35, "direccion":"carpintero", "descripcion":35},
-    {"Localidad": "Juan", "nombreDelLugar":35, "direccion":"carpintero", "descripcion":35},
-    {"Localidad": "Juan", "nombreDelLugar":35, "direccion":"carpintero", "descripcion":35},
-    {"Localidad": "Juan", "nombreDelLugar":35, "direccion":"carpintero", "descripcion":35}
-
-]
+    {"puesto": "ayudante", "localidad": "San Bernardo", "nombreDelLugar":"SubUrban", "direccion":"AV. 159 33", "descripcion":"Buscan cajero o cajera en tienda de ropa"},
+    {"puesto": "ayudante", "localidad": "Mar de Ajó", "nombreDelLugar":"Resto MDA", "direccion":"AV. 456 66", "descripcion":"asdasdasd"},
+    {"puesto": "ayudante", "localidad": "Santa Teresita", "nombreDelLugar":"Pizzeria MDA", "direccion":"Chascomus 4989", "descripcion":"adasdasd"}
+ ]
