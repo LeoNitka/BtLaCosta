@@ -256,14 +256,31 @@ main h1 {
 }
 
 .input-text {
-  border-radius: 8px;
+  width: 100%;
+  height: 30px;
+  padding: 5px;
+  border-radius: 5px;
   background-color: rgba(228, 228, 228, 0.897);
   color: black;
 }
 
+.area {
+  height: 90px;
+}
+
 .input-boton {
+  padding: 5px 0;
   background-color: black;
   color: white;
+  cursor: pointer;
+}
+
+.input-boton:hover {
+  background-color: rgba(36, 32, 44, 0.8823529412);
+}
+
+.file-btn {
+  border-radius: 5px;
 }
 
 textarea {
@@ -362,6 +379,8 @@ nav {
 }
 
 .listOferta {
+  display: flex;
+  flex-direction: column-reverse;
   position: relative;
   width: 100%;
 }
@@ -429,8 +448,24 @@ nav {
   color: white;
 }
 
-.marginLeft {
-  margin-left: 10px;
+.form-input-publicaciones {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: auto;
+  padding: 30px 0;
+  gap: 10px;
+}
+
+.busqueda {
+  display: flex;
+  gap: 20px;
+  margin: 40px;
+  flex-wrap: wrap;
+}
+
+.barra {
+  width: 50%;
 }
 
 @media (min-width: 500px) {

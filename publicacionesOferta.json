@@ -1,5 +1,5 @@
 [
-    {"puesto": "ayudante", "localidad": "San Bernardo", "nombreDelLugar":"SubUrban", "direccion":"AV. 159 33", "descripcion":"Buscan cajero o cajera en tienda de ropa"},
-    {"puesto": "ayudante", "localidad": "Mar de Ajó", "nombreDelLugar":"Resto MDA", "direccion":"AV. 456 66", "descripcion":"asdasdasd"},
-    {"puesto": "ayudante", "localidad": "Santa Teresita", "nombreDelLugar":"Pizzeria MDA", "direccion":"Chascomus 4989", "descripcion":"adasdasd"}
+    {"puesto": "Cajero", "localidad": "San Bernardo", "nombreDelLugar":"SubUrban", "direccion":"AV. 159 33", "descripcion":"Buscan cajero o cajera en tienda de ropa"},
+    {"puesto": "Mozo", "localidad": "Mar de Ajó", "nombreDelLugar":"Resto MDA", "direccion":"AV. 456 66", "descripcion":"Se busca mozo-camarero con experiencia."},
+    {"puesto": "Pizzero", "localidad": "Santa Teresita", "nombreDelLugar":"Pizzeria MDA", "direccion":"Chascomus 4989", "descripcion":"Se solicita pizzero para temporada 2023, con posiblidad para todo el año."}
  ]

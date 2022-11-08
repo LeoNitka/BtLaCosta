@@ -40,43 +40,32 @@
 
   <div class="publicar">
     <h2 class="tituloOferta">Realiza una publicacion:</h2>
-    
-   <div class="marginLeft">
-    <h4 class="tituloOferta2">Localidad:</h4>
-    <form action="#" id="formulario">
-        <label  for="Localidad"></label>
-        <select class="input-text" name="Localidad" id="localidad"> 
-        </select>
-        <br>
-        <label  for="Nombre del lugar"></label>
-         Nombre del lugar*:
-        <input class="input-text" id="nombreDelLugar" type="text" name="nombreDelLugar"><br>
-        <br>
-        <label for="puesto"></label>
-         Puesto:
-        <input class="input-text" id="puesto" type="text" name="puesto">
-        <br>
-        <label for="Direccion"></label>
-         Direccion:
-        <input class="input-text" id="direccion" type="text" name="Direccion">
-        <br>
-        <label for="Adjuntar imagen"></label>Adjuntar imagen:
-        <input class="input-boton" type="file">
-        <br>
-        <h5>*campo obligatorio</h5><br>
-        <label for="Texto del mensaje"> Descripcion*:
-        <textarea class="input-text" id="descripcion" type="Texto del mensaje" name="Texto del mensaje"></textarea>
-        <input class="input-boton"  type="submit" value="Publicar">
-        <label for="Palabra clave"></label>
-    </form>
+    <div>
+      <form action="#" id="formulario" class="form-input-publicaciones">
+          <label for="Localidad">Localidad:</label>
+          <select class="input-text" name="Localidad" id="localidad"> 
+          </select>
+          <label  for="Puesto">Puesto:</label>
+          <input class="input-text" id="puesto" type="text" name="Puesto">
+          <label  for="Nombre del lugar">Nombre del lugar*:</label>
+          <input class="input-text" id="nombreDelLugar" type="text" name="NombreDelLugar">
+          <label for="Direccion">Direccion:</label>
+          <input class="input-text" id="direccion" type="text" name="Direccion">
+          <label for="Adjuntar imagen">Adjuntar imagen:</label>
+          <input class="file-btn" type="file">
+          <label for="Texto del mensaje">Descripcion*:</label>
+          <textarea class="input-text area" id="descripcion" type="Texto del mensaje" name="Texto del mensaje"></textarea>
+          <input class="input-boton" type="submit" value="Publicar">
+          <strong>*campo obligatorio</strong>
+      </form>
     </div>
   </div>
   <div>
     <form action="#" id="buscador">
-        <p class="busqueda"> Realiza tu busqueda:
+      <div class="busqueda"> Realiza tu busqueda:
           <input type="search" id="buscarPalabra" name="Palabra clave" placeholder="Palabra clave"> 
           <label  for="Localidad"></label>
-          <select class="input-text" name="Localidad" id="buscarLocalidad"> 
+          <select class="input-text barra" name="Localidad" id="buscarLocalidad"> 
           <option value=""></option>
            <option value="Costa Esmeralda">Costa Esmeralda</option>
            <option value="Pinar del Sol - Villa Robles">Pinar del Sol - Villa Robles</option>
@@ -94,7 +83,7 @@
         </select>
         <input class="input-boton" id="botonBuscador"  type="submit" value="Buscar"><br> <br>
           <!-- <input type="search" id="buscarLocalidad" name="Localidad" placeholder="Localidad"> <input type="submit" value="Buscar">  -->
-        </p> 
+        </div>
     </form>
   </div>
 

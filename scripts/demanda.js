@@ -1,6 +1,7 @@
 class PublicacionDemanda {
-    constructor(descripcion){
+    constructor(descripcion, img){
      this.descripcion = descripcion;
+     this.img = img;
      
     }
 }
@@ -18,6 +19,7 @@ const crearPublicacionDemanda = (publicacionDemanda)=> {
                                  <p class="text-oferta">
                                  ${publicacionDemanda.descripcion}
                                  </p>
+                                 <img class="ofertaImg" src=${publicacionDemanda.img} alt="img">
                                  `;
     document.querySelector(".listOferta").append(contenedorPublicacion);
 }
@@ -32,8 +34,10 @@ publicar.addEventListener("submit", (e)=>{
 
 
     let descripcion = document.getElementById("descripcion").value;
+   
 
-    let nuevaPublicacion = new PublicacionDemanda(descripcion);
+
+    let nuevaPublicacion = new PublicacionDemanda(descripcion, img);
     listaPublicacionDemanda.push(nuevaPublicacion);
     localStorage.setItem("publicacionDemanda", JSON.stringify(listaPublicacionDemanda));
 
@@ -48,8 +52,13 @@ publicar.addEventListener("submit", (e)=>{
     console.log(listaPublicacionDemanda)
 
 
-
-    
-   
-
 })
+
+fetch("../publicacionesDemanda.json")
+    .then(response => response.json())
+    .then(result => {
+        const datos = result;
+        datos.forEach(dato => {
+            crearPublicacionDemanda(dato)
+        })
+    })
