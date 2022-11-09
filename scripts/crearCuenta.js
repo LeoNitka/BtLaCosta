@@ -1,14 +1,14 @@
-// GET ID DE FORMULARIO
+
 let formCrear = document.getElementById("formCrear");
 
-// GET DATOS DEL USUARIO DESDE LOCALSTORAGE
+
 const userData = JSON.parse(localStorage.getItem("userData")) || [];
 
 
 formCrear.addEventListener("submit", (e)=>{
       e.preventDefault();
 
-   // CREAR LA CUENTA
+   
       const nombre = document.getElementById("nombre").value;
       const apellido = document.getElementById("apellido").value;
       const dni = document.getElementById("DNI").value;
