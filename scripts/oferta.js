@@ -38,8 +38,10 @@ const crearPublicacion = (publicacion) => {
            <span>${publicacion.direccion}</span>
            - <span>${publicacion.localidad}</span>
            </p>
+
                                  `;
     document.querySelector(".listOferta").append(contenedorPublicacion);
+   
 }
 
 // Display publicaciones en el documento
@@ -61,6 +63,7 @@ publicar.addEventListener("submit", (e)=>{
     let nuevaPublicacion = new Publicacion(localidad, nombreDelLugar, direccion, descripcion, puesto);
     listaPublicacion.push(nuevaPublicacion);
     localStorage.setItem("publicacion", JSON.stringify(listaPublicacion));
+    clearInput()
 
     crearPublicacion(nuevaPublicacion);
     Toastify({
@@ -143,6 +146,12 @@ fetch("../publicacionesOferta.json")
             document.querySelector("#localidad").append(option);
     }
 
+    const clearInput = () => {
+      
+        const inputs = document.querySelectorAll('.input-text');
+  
+        inputs.forEach((input) => input.value = '');
+    }
 
-
+    
 

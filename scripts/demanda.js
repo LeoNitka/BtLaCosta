@@ -1,7 +1,6 @@
 class PublicacionDemanda {
     constructor(descripcion, img){
      this.descripcion = descripcion;
-     this.img = img;
      
     }
 }
@@ -19,7 +18,7 @@ const crearPublicacionDemanda = (publicacionDemanda)=> {
                                  <p class="text-oferta">
                                  ${publicacionDemanda.descripcion}
                                  </p>
-                                 <img class="ofertaImg" src=${publicacionDemanda.img} alt="img">
+                                
                                  `;
     document.querySelector(".listOferta").append(contenedorPublicacion);
 }
@@ -37,9 +36,10 @@ publicar.addEventListener("submit", (e)=>{
    
 
 
-    let nuevaPublicacion = new PublicacionDemanda(descripcion, img);
+    let nuevaPublicacion = new PublicacionDemanda(descripcion);
     listaPublicacionDemanda.push(nuevaPublicacion);
     localStorage.setItem("publicacionDemanda", JSON.stringify(listaPublicacionDemanda));
+    clearInput()
 
     crearPublicacionDemanda(nuevaPublicacion);
     Toastify({
@@ -62,3 +62,10 @@ fetch("../publicacionesDemanda.json")
             crearPublicacionDemanda(dato)
         })
     })
+
+    const clearInput = () => {
+      
+        const inputs = document.querySelectorAll('.input-text');
+  
+        inputs.forEach((input) => input.value = '');
+    }
