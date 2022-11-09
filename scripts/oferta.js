@@ -104,14 +104,18 @@ function searchPost(e){
 })
 
 
-fetch("../publicacionesOferta.json")
-    .then(response => response.json())
-    .then(result => {
-        const datos = result;
-        datos.forEach(dato => {
-            crearPublicacion(dato)
-        })
+const pedirPosts =
+async () => {
+    const resp = await 
+    fetch("../publicacionesOferta.json")
+    const data = await resp.json()
+    
+    data.forEach(post => {
+        crearPublicacion(post)
     })
+}
+
+pedirPosts();
 
     fetch("../localidades.json")
     .then(response => response.json())
